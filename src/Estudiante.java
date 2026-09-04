@@ -32,4 +32,13 @@ public class Estudiante {
         this.carrera = carrera;
         this.edad = edad;
     }
+
+
+    public void mostrarinformacion() {
+        System.out.println("Nombre: "  + nombre);
+        System.out.println("Carrera: " + carrera);
+        System.out.println("Edad: "    + edad);
+
+
+    }
 }
