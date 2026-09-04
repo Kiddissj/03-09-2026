@@ -17,9 +17,19 @@ public class Main {
 
         Estudiante estudiante = new Estudiante(nombre,carrera,edad);
 
-        estudiante.mostrarinformacion();
-
-
+        if (edad >= 18) {
+            System.out.println("Acceso autorizado");
+        }else {
+            System.out.println("Acceso denegado");
         }
 
+
+            estudiante.mostrarinformacion();
+
+
+
+
+
+
+}
 }
