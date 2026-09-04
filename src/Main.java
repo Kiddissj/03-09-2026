@@ -1,10 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Estudiante estudiante = new Estudiante("Ana","Ingeniería en Informática",20);
+
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("ingrese el nombre");
+        String nombre = input.nextLine();
+
+        System.out.println("ingrese la carrera");
+        String carrera = input.nextLine();
+
+        System.out.println("ingrese la edad");
+        int edad = input.nextInt();
+
+        Estudiante estudiante = new Estudiante(nombre,carrera,edad);
 
         estudiante.mostrarinformacion();
+
 
         }
 
